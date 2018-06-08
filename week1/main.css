@@ -30,8 +30,8 @@ a {
 /* ****************************** */
 #mainContainer {
 	background-color: #fff;
-	width: 21cm;
-	margin: 2cm auto;
+	width: 66%;
+	margin: 75px auto;
 	padding: 15px 25px;
 	font-family: "Trebuchet MS", arial;
 	border-bottom: 7px solid rgb(204, 116, 0);
@@ -45,11 +45,23 @@ a {
 #cvHeader img {
 	float: left;
 	border: 3px solid #357777;
+	width: 20%;
 	height: auto;
 }
 img#profilePic {
 	padding: 7px;
-	margin-right: 30px;
+	/*margin-right: 30px;*/
+}
+.headerSideImg {
+	float: left;
+	width: 80%;
+}
+.headerM {
+	float: left;
+	padding: 60px 0 0 30px;
+}
+.headerR {
+	float: right;
 }
 #cvHeader h1 {
 	/*font-family: 'LeagueGothicRegular', serif;*/
@@ -57,23 +69,23 @@ img#profilePic {
 	font-size: 40px;
 	color: #000;
 	letter-spacing: 0;
-	margin-top: 60px;
-	margin-left: 150px;
+	/*margin-top: 60px;
+	margin-left: 150px;*/
 }
 #cvHeader h2 {
 	font-family: 'LeagueGothicRegular', serif;
-	font-size: 20px;
+	font-size: 18px;
 	color: dimgray;
 	letter-spacing: 0;
 	margin-top: 3px;
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 }
 #cvHeader ul {
-	position: absolute;
+	/*position: absolute;
+	top: 0;
+	right: 0;*/
 	margin: 0;
 	padding: 75px 0 0 20px;
-	top: 0;
-	right: 0;
 	font-size: 12px;
 	line-height: 1.8;
 	font-weight: bold;
@@ -161,4 +173,61 @@ table .defaultFullSkill .skillProcent {
 #mainLeft table tr td {
 	vertical-align: top;
 	padding-top: 15px;
+}
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+@media only screen and (max-width:750px) {
+  /* For tablets: */
+  #mainContainer {width: 100%;}
+  #cvHeader h1 {
+	  font-size: 30px;
+  }
+  #cvHeader h2 {
+	  font-size: 14px;
+  }
+  #cvHeader img {
+	  width: 30%;
+  }
+  .headerSideImg {
+	  width: 70%;
+  }
+  .headerM, .headerR {
+	  float: none;
+	  width: 100%;
+  }
+  #rightBanner, #mainLeft {
+	  float: none;
+	  width: 100%;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:450px) {
+  /* For mobile phones: */
+  #mainContainer {width: 100%;}
+  #cvHeader h1 {
+	  font-size: 20px;
+  }
+  #cvHeader h2 {
+	  font-size: 10px;
+  }
+  #cvHeader img {
+	  width: 100%;
+  }
+  .headerSideImg {
+	  width: 100%;
+  }
+  .headerM, .headerR {
+	  float: none;
+	  width: 100%;
+  }
+  #rightBanner, #mainLeft {
+	  float: none;
+	  width: 100%;
+  }  
 }
