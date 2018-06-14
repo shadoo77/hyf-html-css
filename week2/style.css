@@ -166,6 +166,9 @@ ul#grid-floats li {
 #grid-flex {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0px;
+	margin: 0 auto;
+	width: 100%;
 }
 #grid-flex .grid-item {
 	margin: 0.5em;
