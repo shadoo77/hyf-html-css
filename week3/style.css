@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	/*background: url(images/bg-header-muumimuseo.png) top right no-repeat;*/
+}
+a {
+	text-decoration: none;
+}
+main {
+	margin: 0 3%;
+}
+header {
+	margin: 16px 3%;
+	overflow: hidden;
+}
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+#siteLogo {
+	float: left;
+}
+#siteLogo img {
+	display: block;
+	margin: auto;
+	max-width: 200px;
+	height: auto;
+}
+nav {
+	float: right;
+}
+nav ul {
+	margin: auto;
+	padding: 0;
+	display: none;
+}
+nav ul li {
+	list-style: none;
+}
+nav .icon {
+	font-size: 45px;
+}
+a.icon {
+	color: #32804b;
+	padding: 8px;
+}
+/* ***************************************** */
+#mainBannerTop img, #mainBannerBottom img {
+	width: 100%;
+	height: auto;
+}
+#mainBannerBottom {
+	color: #404041;
+	position: relative;
+}
+a.linkType {
+	display: inline_block;
+	color: #32804B;
+}
+.frontText {
+	text-align: center;
+	padding: 10px 15px;
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	float: none;
+}
+.frontText a {
+	display: block;
+	width: 121px;
+	margin: 10px auto;
+}
+.frontText h1, .frontText h2 {
+	/*font-family: 'bodoni_egyptian_probold';*/
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.frontText h1 {
+	font-size: 35px;
+	color: #35733c;
+	width: 100%;
+	margin-bottom: 0;
+}
+.frontText h2 {
+	margin-top: 0;
+}
+.circleOrange {
+	font-family: 'Indie Flower', cursive;
+	background: #e94e0f;
+	color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding-top: 30px;
+	font-size: 35px;
+	display: block;
+	margin: 0 auto;
+}
+/* ******************************************** */
+/* ******************************************** */
+.reclame {
+	background-color: #35733c;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+}
+/* ******************************************** */
+.eyesReclame {
+	background-color: #363636;
+	text-align: center;
+	margin: 0;
+	padding: 5px;
+}
+.eyesReclame a {
+	color: #fff;
+	font-size: 18px;
+}
+.eyesRecCont {
+	padding: 60px 0;
+}
+/* ******************************************* */
+.articleContainer {
+	margin-top: 0;
+}
+/* ************************************************ */
+.adsContainer {
+	background-color: #7ab7bc;
+}
+.adsContainer::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.adItem {
+	padding: 40px 3px;
+	text-align: center;
+	position: relative;
+}
+.adItem a {
+	color: #404041;
+	display: block;
+}
+.adItem span {
+	color: #fff;
+	font-weight: bold;
+}
+/* ********************************* *************** */
+.blogLtr img, .blogRtl img {
+	width: 100%;
+	height: auto;
+}
+.blogTxt {
+	padding: 20px;
+}
+.niceTxtAd {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	padding: 20px 5px;
+}
+.niceTxtAd p {
+	margin: 0;
+	font-size: 1em;
+}
+.niceTxtAd span {
+	font-family: 'Times New Roman', Times, serif;
+	color: #35733c;
+	font-size: 30px;
+	line-height: 70px;
+}
+/* 888888888888888888888888888888888888888888888888888888888888888888 */
+.comLogo img {
+	width: 100%;
+	height: auto;
+	max-width: 380px;
+	max-height: 150px;
+	display: block;
+	margin: 15px auto;
+}
+/* 888888888888888888888888888888888888888888888888888888888888888 */
+footer {
+	background: url(images/bg-footer-navi.jpg) no-repeat;
+	background-size: cover;
+	font-family: 'Abel', sans-serif;
+	
+	color: #fff;
+	padding: 3%;
+	overflow: auto;
+}
+footer a {
+	color: #fff;
+	display: inline_block;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer ul {
+	margin: 0;
+}
+footer ul li {
+	list-style: none;
+	font-size: 1.2em;
+}
+footer section {
+	margin-bottom: 20px;
+}
+.fooBtn {
+	width: 140px;
+	border: 1px solid white;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.fooBtn a {
+	display: block;
+}
+/* ************************ 7777777777777777777777777777777777 ************* */
+@media only screen and (min-width:460px) {
+	.eyesRecCont {
+		background-image: url(images/silmat-oikea.gif), url(images/silmat-vasen.gif);
+    	background-position: right top, left bottom;
+		background-repeat: no-repeat, no-repeat;
+	}
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer section {
+		width: 50%;
+	}
+}
+/* ************************************* */
+@media only screen and (min-width:650px) {
+	.frontText .circleOrange {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.frontText h1 {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+/* ********************************************** */
+@media only screen and (min-width:768px) {
+	footer section {
+		width: calc(100% / 3);
+	}
+	.articleItem {
+		float: left;
+		width: 25%;
+	}
+	.articleItem:first-child {
+		width: 50%;
+	}
+	.articlesContainer {
+		overflow: auto;
+	}
+	.niceTxtAd p {
+		font-size: 1.7em;
+	}
+	main {
+		margin: 0 8%;
+	}
+}
+/* ***************************************************** */
+@media only screen and (min-width:992px) {
+	.frontText {
+		position: absolute;
+		/*left: 0;
+		top: -26px;*/
+		top: 0px;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+		width: 78%;
+		z-index: 1000;
+		padding: 25px 80px;
+		background-color: #fff;
+	}
+	.frontText .circleOrange {
+		position: absolute;
+		right: -30px;
+		bottom: -30px;
+	}
+	.frontText h1 {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.reclame {
+		position: relative;
+	}
+	.reclame img {
+		position: absolute;
+		top: 50%;
+    	right: 0;
+    	transform: translate(-50%, -50%);
+	}
+	.adItem .circleOrange {
+		position: absolute;
+		right: 2%;
+		top: 50%;
+		transform: translate(-10%, -50%);
+	}
+	.adItem a {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+	main {
+		margin: 0 4%;
+	}
+	.blogLtr, .blogRtl, #companiesLogos {
+		overflow: auto;
+	}
+	.ltrImg {
+		width: 50%;
+		float: left;
+	}
+	.blogLtr .blogTxt {
+		width: 50%;
+		float: right;
+	}
+	.rtlImg {
+		width: 50%;
+		float: right;
+	}
+	.blogRtl .blogTxt {
+		width: 50%;
+		float: left;
+	}
+	/* ************************ */
+	.comLogo {
+		float: left;
+		width: calc(100% /3);
+	}
+	footer section {
+		width: calc(100% / 6);
+	}
+}
+/* 888888888888888888888888888888888888888888888 */
+@media only screen and (min-width:1080px) {
+	body {
+		background: url(images/bg-header-muumimuseo.png) top right no-repeat;
+	}
+}
