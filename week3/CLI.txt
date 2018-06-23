@@ -1,20 +1,22 @@
 
 $ touch mycommands.sh
 
-Sima Milli@DESKTOP-8J694K5 MINGW64 ~
 $ vim mycommands.sh
 
-____________________________________
+
+<<<<<<<<<<<<<<<<<<<<<
+Then in Vim : 
+--------------------------
 mkdir shadi
 cd shadi
 touch balnk.txt
-for i in {1..5}; do echo "Hello" >> greetings.txt; done
+for i in {1..5}; do echo "hello" >> greetings.txt;done
 for i in {1..5}; do cp greetings.txt "$i.txt"; done
 echo "cat" > pets.txt
 echo "dog" >> pets.txt
 echo "hamster" >> pets.txt
-echo "cat" > commands.txt
-echo "ls" >> commands.txt
-echo "pwd" >> commands.txt
-sort -u commands.txt pets.txt > blank.txt
-cat blank.txt
+echo "cat" > blank.txt
+echo "ls" >> blank.txt
+echo "pwd" >> blank.txt
+sort -u blank.txt pets.txt > output.txt
+cat output.txt
