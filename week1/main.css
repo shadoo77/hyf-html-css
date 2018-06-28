@@ -98,6 +98,10 @@ img#profilePic {
 	font-size: 17px;
 	color: #438585;
 }
+.iconSet {
+	font-size: 12px;
+	background-color: #838282;
+}
 /* ********************************************** */
 #cvBody {
 	margin-top: 30px;
@@ -127,6 +131,9 @@ section {
 	margin-bottom: 30px;
 	font-size: 12px;
 }
+.rightBannerBlog {
+	overflow-x:auto;
+}
 #rightBanner .rightBannerBlog {
 	text-align: justify;
 }
@@ -140,6 +147,13 @@ table {
 .rightBannerBlog table tr td {
 	vertical-align: center;
 	padding-top: 10px;
+}
+.rightBannerBlog table tr td:first-child {
+	width: 25%;
+}
+.rightBannerBlog table tr td:nth-child(2) {
+	width: 75%;
+	padding-left: 10px;
 }
 table .defaultFullSkill {
 	width: 100%;
@@ -173,6 +187,16 @@ table .defaultFullSkill .skillProcent {
 #mainLeft table tr td {
 	vertical-align: top;
 	padding-top: 15px;
+}
+#mainLeft section {
+	overflow-x:auto;
+}
+#mainLeft table tr td:first-child {
+	width: 30%;
+}
+#mainLeft table tr td:nth-child(2) {
+	width: 70%;
+	padding-left: 20px;
 }
 /* ************************************** */
 /* ************************************** */
